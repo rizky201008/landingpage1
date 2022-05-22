@@ -303,7 +303,7 @@ $total_order = mysqli_num_rows($pesanan);
                         <a class="nav-link active" aria-current="page" href="#follow">Ikuti Kami</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link button btn-primary active" href="#">Daftar Sekarang</a>
+                      <a class="nav-link button btn-primary active" href="/auth/register">Daftar Sekarang</a>
                     </li>
                   </ul>
             </div>

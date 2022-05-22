@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
-$username = 'vixc4934_pulsa';
-$password = 'pulsa123';
-$name = 'vixc4934_pulsa';
+$username = 'yourusername';
+$password = 'yourpassword';
+$name = 'yourdatabase_name';
 	$con = mysqli_connect($host,$username,$password,$name);
 ?>
