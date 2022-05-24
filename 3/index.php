@@ -1,3 +1,13 @@
+<?php
+include 'config.php';
+//Total Pengguna
+$user = $con->query("SELECT * FROM `users`");
+$total_user = mysqli_num_rows($user);
+
+//Total Pesanan
+$pesanan = $con->query("SELECT * FROM `semua_pembelian`");
+$total_order = mysqli_num_rows($pesanan);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -298,8 +308,8 @@
         </div>
       </div>
       <div class="row justify-content-center text-center">
-        <h2 class="text-primary mb-3">Di Gunakan Oleh 1000 Orang</h2>
-        <h2 class="text-primary">Menyelesaikan Hingga 10000 Transaksi</h2>
+        <h2 class="text-primary mb-3">Di Gunakan Oleh <?php echo $total_user?> Orang</h2>
+        <h2 class="text-primary">Menyelesaikan Hingga <?php echo $total_order?> Transaksi</h2>
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
